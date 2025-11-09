@@ -1,17 +1,14 @@
 import { fileURLToPath, URL } from "node:url";
 
-import vike from "vike/plugin";
-
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 import svgr from "vite-plugin-svgr";
-import vercel from "vite-plugin-vercel";
 
 export default defineConfig(({ mode }) => {
 	const isDev = mode === "development";
 
 	return {
-		plugins: [vike(), react(), svgr(), vercel()],
+		plugins: [react(), svgr()],
 		css: {
 			modules: {
 				generateScopedName: isDev
