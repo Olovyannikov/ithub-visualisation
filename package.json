@@ -5,8 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"dev": "vite",
-		"build": "vike build",
-		"start": "pnpm run build && cross-env NODE_ENV=production tsx ./express-entry.ts"
+		"build": "vite build"
 	},
 	"keywords": [],
 	"type": "module",
